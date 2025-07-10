@@ -1,6 +1,7 @@
-package com.yigit.kafkaProject;
+package com.yigit.kafkaProject.Controller;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.yigit.kafkaProject.Service.KafkaProducerService;
 import com.yigit.kafkaProject.entity.Person;
 import org.springframework.web.bind.annotation.*;
 

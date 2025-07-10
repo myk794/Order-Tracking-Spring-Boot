@@ -1,6 +1,4 @@
-package com.yigit.kafkaProject;
-import com.couchbase.client.core.deps.com.fasterxml.jackson.databind.ObjectMapper;
-import com.yigit.kafkaProject.entity.Person;
+package com.yigit.kafkaProject.Service;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 

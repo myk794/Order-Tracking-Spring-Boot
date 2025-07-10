@@ -1,4 +1,4 @@
-package com.yigit.kafkaProject;
+package com.yigit.kafkaProject.Service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.yigit.kafkaProject.Repository.PersonRepository;
