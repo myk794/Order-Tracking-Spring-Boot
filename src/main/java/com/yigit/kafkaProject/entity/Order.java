@@ -19,8 +19,5 @@ public class Order {
 
     private String currentStatus;
 
-    private Date estimatedDelivery;
-
-    private List<StatusHistory> history;
 
 }
