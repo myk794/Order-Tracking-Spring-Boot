@@ -20,7 +20,7 @@ public class KafkaTestController {
     @GetMapping("/send")
     public String sendMessage(@RequestBody Person person) throws JsonProcessingException {
         String jsonPerson = objectMapper.writeValueAsString(person);
-        producerService.sendMessage("my-topic", jsonPerson);
+        producerService.sendMessage("test-topic", jsonPerson);
         return "Message sent: " + jsonPerson;
     }
 }

@@ -19,12 +19,13 @@ public class KafkaConsumerService {
         this.objectMapper = objectMapper;
     }
 
-    @KafkaListener(topics = "my-topic", groupId = "my-group")
+    @KafkaListener(topics = "test-topic", groupId = "my-group")
     public void listen(String message) {
         try{
-            Person person= objectMapper.readValue(message, Person.class);
+            /*Person person= objectMapper.readValue(message, Person.class);
              _personRepository.save(person);
-            System.out.println("Recieved message: " + person);
+            System.out.println("Recieved message: " + person);*/
+            System.out.println("Recieved i: " + message);
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
