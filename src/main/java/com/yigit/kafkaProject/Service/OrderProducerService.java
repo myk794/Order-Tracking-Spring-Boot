@@ -11,7 +11,7 @@ import java.util.concurrent.CompletableFuture;
 @Service
 public class OrderProducerService {
 
-    private final KafkaTemplate<String, Order> kafkaTemplate; // Value tipi Order oldu
+    private final KafkaTemplate<String, Order> kafkaTemplate; 
 
     public OrderProducerService(KafkaTemplate<String, Order> kafkaTemplate) {
         this.kafkaTemplate = kafkaTemplate;

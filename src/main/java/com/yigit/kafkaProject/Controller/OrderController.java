@@ -58,6 +58,7 @@ public class OrderController {
         try {
             SendResult<String, Order> result = orderProducerService.sendOrderEvent("orders-topic", order)
                     .get(5, TimeUnit.SECONDS);
+
             System.out.println("Order status updated and event sent: " + order);
             return new ResponseEntity<>("Order status updated and event sent for: " + order.getOrderId(), HttpStatus.OK);
         } catch (Exception e) {
